@@ -1,9 +1,9 @@
 # CVPR2021 Incremental Learning
-[[Paper]](to_be_add) 
+[[Paper]](https://arxiv.org/abs/2103.01737) 
 
 This repository is for the paper "Distilling Causal Effect of Data in Class-Incremental Learning".
 <div align="center">
-  <img width="70%", src="https://github.com/JoyHuYY1412/DDE_IL/blob/master/illu.jpg"/>
+  <img width="70%", src="https://github.com/JoyHuYY1412/DDE_IL/blob/main/illu.jpg.jpg"/>
 </div><br/>
 
 
@@ -18,15 +18,14 @@ This repository is for the paper "Distilling Causal Effect of Data in Class-Incr
 	- see `imagenet-class-incremental/run.sh` for the experiments on ImageNet-Subset
 	- see `imagenet-class-incremental/run_all.sh` for the experiments on ImageNet-Full
 
-<!-- # Citation
+# Citation
 Please cite the following paper if you find this useful in your research:
 ```
 @InProceedings{Hu_20121_CVPR,
-author = {Hu, Xinting and Tang, Kaihua and Loy, Chen Change and Wang, Zilei and Lin, Dahua},
-title = {Learning a Unified Classifier Incrementally via Rebalancing},
+author = {Hu, Xinting and Tang, Kaihua and Miao, Chunyan and Hua, Xian-Sheng and Zhang, Hanwang},
+title = {Distilling Causal Effect of Data in Class-Incremental Learning},
 booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
 month = {June},
 year = {2021}
 }
 ```
- -->
