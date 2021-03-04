@@ -11,9 +11,11 @@ This repository is for the paper "Distilling Causal Effect of Data in Class-Incr
 1. Dependencies
 	- Python 3.6 (Anaconda3 Recommended)
 	- Pytorch 0.4.0
+
 2. Getting Started 
 	- the data for CIFAR100 and ImageNet are put in `cifar100-class-incremental/data` and `imagenet-class-incremental/data`, or you can make soft links to the directories which include the corresponding data
 	- make soft links for `utils_incremental` folder under `cifar100-class-incremental` and `imagenet-class-incremental`
+	- make folders `logs`, `results` and `checkpoint` under `cifar100-class-incremental` and `imagenet-class-incremental`
 	- see `cifar100-class-incremental/run.sh` for the experiments on CIFAR100
 	- see `imagenet-class-incremental/run.sh` for the experiments on ImageNet-Subset
 	- see `imagenet-class-incremental/run_all.sh` for the experiments on ImageNet-Full

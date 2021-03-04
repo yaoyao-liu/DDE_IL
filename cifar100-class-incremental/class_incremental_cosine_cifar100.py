@@ -141,7 +141,8 @@ X_train_total = np.array(trainset.train_data)
 Y_train_total = np.array(trainset.train_labels)
 X_valid_total = np.array(testset.test_data)
 Y_valid_total = np.array(testset.test_labels)
-
+if args.DCE:
+    args.ckp_prefix += '_top_'+str(args.top_k)
 # Launch the different runs
 for iteration_total in range(args.nb_runs):
     order_list = [87, 0, 52, 58, 44, 91, 68, 97, 51, 15, 94, 92, 10, 72, \
@@ -335,8 +336,6 @@ for iteration_total in range(args.nb_runs):
         print('Max and Min of train labels: {}, {}'.format(min(map_Y_train), max(map_Y_train)))
         print('Max and Min of valid labels: {}, {}'.format(min(map_Y_valid_cumul), max(map_Y_valid_cumul)))
         ##############################################################
-        if args.DCE:
-            args.ckp_prefix += '_top_'+str(args.top_k)
         ckp_path = './checkpoint/{}'.format(args.ckp_prefix)
         if not os.path.exists(ckp_path):
             os.mkdir(ckp_path)
